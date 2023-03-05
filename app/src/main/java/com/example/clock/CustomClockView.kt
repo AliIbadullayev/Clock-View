@@ -242,25 +242,6 @@ class ClockView @JvmOverloads constructor(
         drawHourHand(canvas, calendar.get(Calendar.HOUR), calendar.get(Calendar.MINUTE))
         drawMinuteHand(canvas, calendar.get(Calendar.MINUTE))
         drawSecondHand(canvas, calendar.get(Calendar.SECOND))
-//        // рисуем часовую стрелку
-//        val hourRotation =
-//            360f / 12 * calendar.get(Calendar.HOUR) + 30f / 60 * calendar.get(Calendar.MINUTE)
-//        canvas?.rotate(hourRotation, centerX, centerY)
-//        canvas?.drawLine(centerX, centerY, centerX, centerY - hourHandLength, hourHandPaint)
-//        canvas?.rotate(-hourRotation, centerX, centerY)
-//
-//        // рисуем минутную стрелку
-//        val minuteRotation =
-//            360f / 60 * calendar.get(Calendar.MINUTE) + 6f / 60 * calendar.get(Calendar.SECOND)
-//        canvas?.rotate(minuteRotation, centerX, centerY)
-//        canvas?.drawLine(centerX, centerY, centerX, centerY - minuteHandLength, minuteHandPaint)
-//        canvas?.rotate(-minuteRotation, centerX, centerY)
-//
-//        // рисуем секундную стрелку
-//        val secondRotation = 360f / 60 * calendar.get(Calendar.SECOND)
-//        canvas?.rotate(secondRotation, centerX, centerY)
-//        canvas?.drawLine(centerX, centerY, centerX, centerY - secondHandLength, secondHandPaint)
-//        canvas?.rotate(-secondRotation, centerX, centerY)
 
         // рисуем центр часов
         val centerDotRadius = 20f
